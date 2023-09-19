@@ -1,3 +1,5 @@
+# Multi_Sentiment_Analysis
+
 ```markdown
 # 감정 분석기 - Multiple Classification with TensorFlow
 
@@ -11,7 +13,7 @@ Korean Emotion Classifierは、한국어로된 대화 텍스트에서 기본적�
 
 ## 依存関係
 
-- Python 3.x
+- Python 3.10.3
 - TensorFlow 2.x
 - NumPy
 - pandas
@@ -55,3 +57,6 @@ MIT
 ## 作成者
 
 Ueno Takahiro
+
+```
+
