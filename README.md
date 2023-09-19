@@ -1,6 +1,3 @@
-# Multi_Sentiment_Analysis
-もちろんです、以下はかっこよく作成した`README.md`の例です。
-
 ```markdown
 # 감정 분석기 - Multiple Classification with TensorFlow
 
@@ -57,8 +54,4 @@ MIT
 
 ## 作成者
 
-[Your Name]
-
-```
-
-この`README.md`はプロジェクトの概要、使い方、依存関係などを簡潔に説明しています。必要に応じてセクションを追加したり、詳細を加えたりできます。READMEはプロジェクトの「顔」ですので、見やすく、理解しやすいものにすることが重要です。
+Ueno Takahiro
