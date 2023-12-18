@@ -1,6 +1,6 @@
 # Multi_Sentiment_Analysis
 
-```markdown
+
 # 감정 분석기 - Multiple Classification with TensorFlow
 
 Korean Emotion Classifierは、한국어로된 대화 텍스트에서 기본적인 감정을 분류하는 Pythonプログラムです。このプロジェクトはTensorFlowを使用して深層学習モデルを訓練しています。
