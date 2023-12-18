@@ -1,62 +1,52 @@
-# Multi_Sentiment_Analysis
+# Multi-Sentiment Analysis
+[日本語](./docs/README.ja-jp.md) | [한국어](./docs/README.ko-kr.md)
+## Korean Emotion Classifier - Multiple Classification with TensorFlow
 
+The Korean Emotion Classifier is a Python program that classifies basic emotions in Korean conversational text. This project uses TensorFlow to train a deep learning model.
 
-# 감정 분석기 - Multiple Classification with TensorFlow
+## Features
 
-Korean Emotion Classifierは、한국어로된 대화 텍스트에서 기본적인 감정을 분류하는 Pythonプログラムです。このプロジェクトはTensorFlowを使用して深層学習モデルを訓練しています。
+- Classifies 6 basic emotions (Anger, Joy, Anxiety, Embarrassment, Sadness, Hurt)
+- Sequence modeling using LSTM (Long Short-Term Memory)
+- Text processing with a custom tokenizer
 
-## 特徴
-
-- 6種類の基本感情（분노, 기쁨, 불안, 당황, 슬픔, 상처）に分類
-- LSTM (Long Short-Term Memory) を使用したシーケンスモデリング
-- カスタムトークナイザーによるテキスト処理
-
-## 依存関係
+## Dependencies
 
 - Python 3.10.3
 - TensorFlow 2.x
 - NumPy
 - pandas
 
-## 使い方
+## Usage
 
-### 1. データセットの用意
+### 1. Preparing the Dataset
 
-`training.csv`ファイルには、`감정_대분류`と`사람문장1`のカラムが含まれている必要があります。
+The `training.csv` file should contain columns `감정_대분류` and `사람문장1`.
 
-### 2. モデルの訓練
+### 2. Training the Model
 
 ```bash
 python Multiple_classification.py
 ```
 
-### 3. モデルのテスト
-
+### 3. Testing the Model
 ```bash
 python emotion_test.py
 ```
+## Code Description
+[`Multiple_classification.py`](Multiple_classification.py)
 
-## コード説明
+This file is used for training the model. The tokenizer and model are saved as `tokenizer.json`and`model_name.h5`, respectively.
 
-### Multiple_classification.py
+[`emotion_test.py`](emotion_test.py)
 
-このファイルはモデルの訓練に使用されます。トークナイザーとモデルはそれぞれ`tokenizer.json`と`model_name.h5`として保存されます。
 
-[コードを見る](Multiple_classification.py)
+This file loads the saved model and performs emotion analysis on new text data.
 
-### emotion_test.py
-
-このファイルは保存されたモデルをロードし、新しいテキストデータに対して感情分析を行います。
-
-[コードを見る](emotion_test.py)
-
-## ライセンス
+## License
 
 MIT
 
-## 作成者
+## Author
 
 Ueno Takahiro
-
-```
-
